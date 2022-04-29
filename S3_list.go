@@ -20,6 +20,7 @@ func main() {
 	svc := s3.New(sess)
 
 	result, err := svc.ListBuckets(nil)
+
 	if err != nil {
 		exitErrorf("Unable to list buckets, %v", err)
 	}
